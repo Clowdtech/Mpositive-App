@@ -1,0 +1,1 @@
+CREATE TABLE `CategoryTiles` (	`Id`	INTEGER PRIMARY KEY AUTOINCREMENT,	`BackgroundColour`	TEXT,	`ForegroundColour`	TEXT );

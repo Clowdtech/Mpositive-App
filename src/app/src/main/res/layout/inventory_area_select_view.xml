@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clowdtech.mpositive.areas.inventory.views.AreaSelectView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="5dp">
+
+    <ListView
+        android:id="@+id/product_area_select"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="5dp"
+        android:divider="@null"
+        android:drawSelectorOnTop="false"
+        android:choiceMode="singleChoice"
+        android:listSelector="@android:color/transparent"/>
+
+</clowdtech.mpositive.areas.inventory.views.AreaSelectView>

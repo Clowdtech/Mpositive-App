@@ -1,0 +1,1 @@
+INSERT INTO ProductsTemp (Id, Name, Description, LastUpdatedDate, Deleted, VAT, RemoteId, Price, Tile) SELECT Id, Name, Description, LastUpdatedDate, Deleted, VAT, RemoteId, Price, Tile FROM Products;

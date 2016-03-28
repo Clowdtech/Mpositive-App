@@ -1,0 +1,1 @@
+ALTER TABLE ManualTransactionLines ADD COLUMN DateCreated LONG NOT NULL DEFAULT 0;

@@ -1,0 +1,89 @@
+<clowdtech.mpositive.areas.till.views.TenderViewDual xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:divider="?android:attr/dividerHorizontal"
+    android:orientation="vertical"
+    android:showDividers="middle"
+    tools:context=".tender">
+
+    <LinearLayout
+        android:id="@+id/cta_tender"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/completeTransaction"
+            style="@style/button_cta"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/captions_tender_record_payment" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tender_tablet_payment_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cta_tender"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/receipt_total"
+                style="@style/receipt_heading_charge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="@string/dummy_data_price_high" />
+
+            <include
+                android:id="@+id/receipt_read_only"
+                layout="@layout/shared_receipt_read_only"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/receipt_total"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp" />
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:weightSum="9">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/payment_method"
+                layout="@layout/till_payment_method"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</clowdtech.mpositive.areas.till.views.TenderViewDual>

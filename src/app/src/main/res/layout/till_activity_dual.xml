@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clowdtech.mpositive.areas.till.DualPaneContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:divider="?android:attr/dividerHorizontal"
+    android:showDividers="none">
+
+    <include
+        layout="@layout/action_bar" />
+
+    <RelativeLayout
+        android:id="@+id/view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar">
+
+        <include
+            android:id="@+id/checkout_view"
+            layout="@layout/till_checkout_dual"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" />
+
+    </RelativeLayout>
+
+</clowdtech.mpositive.areas.till.DualPaneContainer>

@@ -1,0 +1,17 @@
+<clowdtech.mpositive.areas.reporting.product.SinglePaneContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container">
+
+    <include
+        layout="@layout/action_bar" />
+
+    <FrameLayout
+        android:id="@+id/product_reporting_single_pane"
+        android:layout_below="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+    </FrameLayout>
+
+</clowdtech.mpositive.areas.reporting.product.SinglePaneContainer>

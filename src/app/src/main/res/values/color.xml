@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_primary">#1C68AC</color>
+    <color name="brand_accent">#7F7F7F</color>
+
+    <color name="background_light">#ECECEC</color>
+
+    <color name="font_primary">#696969</color>
+    <color name="font_light">#B2B2B2</color>
+
+    <color name="button_positive_focused">#82B7E6</color>
+    <color name="button_positive_pressed">#3B82C2</color>
+
+    <color name="button_background">#ffd6d7d7</color>
+
+    <color name="background_white">#fff</color>
+    <color name="view_group_border">#dce0e0</color>
+
+    <color name="tile_product_background_default">#fff</color>
+    <color name="tile_product_foreground_default">#696969</color>
+
+    <color name="tile_category_background_default">#1C68AC</color>
+    <color name="tile_category_foreground_default">#fff</color>
+
+    <color name="tile_category_one">#F79F79</color>
+    <color name="tile_category_two">#8A95A5</color>
+    <color name="tile_category_three">#495867</color>
+    <color name="tile_category_four">#B9CDDA</color>
+    <color name="tile_category_five">#4F7CAC</color>
+    <color name="tile_category_six">#4C2A85</color>
+    <color name="tile_category_seven">#DDFBD2</color>
+    <color name="tile_category_eight">#C37D92</color>
+    <color name="tile_category_nine">#FFEE7F</color>
+    <color name="tile_category_ten">#8ED081</color>
+    <color name="tile_category_eleven">#DC493A</color>
+
+</resources>

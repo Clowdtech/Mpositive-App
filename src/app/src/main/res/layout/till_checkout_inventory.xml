@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<clowdtech.mpositive.areas.till.views.InventoryViewImpl xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading Inventory"
+            style="@style/text_base"/>
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:padding="5dp"
+        style="@style/products_grid_till"
+        android:visibility="gone"/>
+
+</clowdtech.mpositive.areas.till.views.InventoryViewImpl>

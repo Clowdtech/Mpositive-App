@@ -1,0 +1,1 @@
+UPDATE Products SET Tile = (SELECT Id FROM ProductTiles WHERE ProductTiles.ProductId = Products.Id);

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/report_products_heading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/reporting_header"
+        android:text="@string/dummy_data_transactions_period" />
+
+    <ListView
+        android:id="@+id/product_reporting_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/report_products_heading"
+        android:layout_above="@+id/reporting_cta_container"
+        android:verticalSpacing="2dp"
+        android:stretchMode="columnWidth"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:choiceMode="singleChoice"
+        android:listSelector="@android:color/transparent">
+
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/reporting_cta_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/reporting_print"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/captions_tender_print_receipt"
+            style="@style/button_cta_split"/>
+
+        <ProgressBar
+            android:id="@+id/reporting_print_progress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerInParent="true"
+            android:visibility="gone">
+        </ProgressBar>
+    </RelativeLayout>
+
+</RelativeLayout>

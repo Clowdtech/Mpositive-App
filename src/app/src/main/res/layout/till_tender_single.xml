@@ -1,0 +1,32 @@
+<clowdtech.mpositive.areas.till.views.TenderViewSingle xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:divider="?android:attr/dividerHorizontal"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <Button
+        android:id="@+id/completeTransaction"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/captions_tender_record_payment"
+        android:layout_alignParentBottom="true"
+        style="@style/button_cta" />
+
+    <TextView
+        android:id="@+id/receipt_total"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dummy_data_price_high"
+        style="@style/receipt_heading_charge"
+        android:layout_alignParentTop="true"/>
+
+    <include layout="@layout/composite_view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/completeTransaction"
+        android:layout_below="@+id/receipt_total"
+        android:visibility="visible"/>
+
+</clowdtech.mpositive.areas.till.views.TenderViewSingle>

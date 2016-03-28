@@ -1,0 +1,45 @@
+## Customize the test machine
+machine:
+    environment:
+        GRADLE_OPTS: -Xmx512m -XX:MaxPermSize=512m
+        BUILD_NUMBER: $CIRCLE_BUILD_NUM
+
+
+## Customize checkout
+##checkout:
+
+
+## Customize dependencies
+##dependencies:
+
+
+## Customize database setup
+##database:
+
+
+## Customize test commands
+test:
+    override:
+        - ./gradlew clean testRelease lint assembleRelease -PdisablePreDex
+        - mkdir $CIRCLE_ARTIFACTS/app
+        - mkdir $CIRCLE_ARTIFACTS/app/lint
+        - cp -r app/build/outputs/lint-results_files app/build/outputs/*.html app/build/outputs/*.xml $CIRCLE_ARTIFACTS/app/lint
+        - cp -r app/build/outputs/apk $CIRCLE_ARTIFACTS/app
+        - mkdir $CIRCLE_ARTIFACTS/app/test
+        - cp -r app/build/reports/tests/release/* $CIRCLE_ARTIFACTS/app/test
+        - cp -r app/build/test-results/release/*.xml $CIRCLE_TEST_REPORTS
+
+
+## Customize deployment commands
+deployment:
+    beta:
+        branch: master
+        commands:
+            - ./gradlew publishApkRelease
+              -PdisablePreDex
+              -Dorg.gradle.project.track=beta
+
+
+## Custom notifications
+##notify:
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clowdtech.mpositive.areas.till.views.TransactionCompleteViewImpl xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_above="@+id/tender_pop_cash_drawer">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tender_change"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/captions_tender_complete_success"
+                android:layout_gravity="bottom"
+                style="@style/tender_complete_message"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tender_receipt_label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/till_receipt_export_type_question"
+                style="@style/tender_complete_message"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/tender_pop_cash_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tender_pop_drawer"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_secondary"
+        android:layout_centerHorizontal="true"
+        style="@style/button_secondary"
+        android:visibility="visible"/>
+
+</clowdtech.mpositive.areas.till.views.TransactionCompleteViewImpl>

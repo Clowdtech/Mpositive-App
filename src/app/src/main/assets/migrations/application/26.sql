@@ -1,0 +1,1 @@
+ALTER TABLE ProductTilesTemp RENAME TO ProductTiles;

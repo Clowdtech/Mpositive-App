@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clowdtech.mpositive.areas.shared.views.ViewMenuView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/action_bar"
+    android:layout_width="match_parent"
+    android:layout_height="?android:actionBarSize"
+    style="@style/HeaderBar"
+    app:theme="@style/Theme.Mpositive.ToolBar"
+    android:popupTheme="@style/Theme.Mpositive.ToolBarPopupThemeOverlay">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/view_menu_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"/>
+
+        <RelativeLayout
+            android:id="@+id/btn_nav_drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_cta_positive"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name_short"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/background_white"
+                android:layout_centerVertical="true"
+                style="@style/text_base"/>
+
+            <TextView
+                android:id="@+id/screen_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textColor="@color/background_white"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/app_name"
+                android:layout_centerVertical="true"
+                style="@style/text_base"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/drawer_pop"
+            android:layout_toStartOf="@+id/drawer_pop"/>
+
+    </RelativeLayout>
+
+</clowdtech.mpositive.areas.shared.views.ViewMenuView>

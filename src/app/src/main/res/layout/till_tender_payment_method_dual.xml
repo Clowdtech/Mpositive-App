@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/filter_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingTop="30dp">
+
+        <TextView
+            style="@style/filter_group_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Method"
+            android:layout_gravity="center_horizontal"
+            android:textSize="24sp"/>
+
+        <RadioGroup
+            android:id="@+id/payment_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="40dp"
+            android:paddingTop="20dp">
+
+            <RadioButton
+                android:id="@+id/tender_card_entry"
+                style="@style/form_radio_left_payment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/captions_tender_card" />
+
+            <RadioButton
+                android:id="@+id/tender_cash_entry"
+                style="@style/form_radio_middle_payment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/captions_tender_cash"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/tender_other_entry"
+                style="@style/form_radio_right_payment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/captions_tender_other" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/filter_group"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="50dp"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:id="@+id/tender_card_amount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/captions_tender_card_amount"
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            style="@style/text_base"
+            android:textSize="18sp"/>
+
+        <clowdtech.mpositive.areas.shared.views.NumericEntryView
+            android:id="@+id/numeric_entry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            app:keypadVisible="true" />
+
+    </LinearLayout>
+
+</LinearLayout>

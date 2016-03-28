@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clowdtech.mpositive.areas.till.views.RecordPaymentViewImpl xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/filter_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <RadioGroup
+            android:id="@+id/payment_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/tender_card_entry"
+                style="@style/form_radio_left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/captions_tender_card" />
+
+            <RadioButton
+                android:id="@+id/tender_cash_entry"
+                style="@style/form_radio_middle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/captions_tender_cash"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/tender_other_entry"
+                style="@style/form_radio_right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/captions_tender_other" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/filter_group"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingEnd="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tender_card_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/captions_tender_card_amount"
+            android:visibility="gone"
+            style="@style/text_base"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"/>
+
+        <clowdtech.mpositive.areas.shared.views.NumericEntryView
+            android:id="@+id/numeric_entry"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/white"
+            app:keypadVisible="true"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+
+</clowdtech.mpositive.areas.till.views.RecordPaymentViewImpl>

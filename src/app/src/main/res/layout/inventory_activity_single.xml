@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clowdtech.mpositive.areas.inventory.SinglePaneContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+    <include
+        layout="@layout/action_bar" />
+
+    <RelativeLayout
+        android:id="@+id/view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar">
+
+        <include
+            layout="@layout/inventory_area_select_view"
+            android:id="@+id/area_view"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+
+    </RelativeLayout>
+
+</clowdtech.mpositive.areas.inventory.SinglePaneContainer>

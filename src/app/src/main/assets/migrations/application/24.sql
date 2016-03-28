@@ -1,0 +1,1 @@
+INSERT INTO ProductTilesTemp (Id, VisibleOnHomePage) SELECT Id, VisibleOnHomePage FROM ProductTiles;

@@ -1,0 +1,1 @@
+CREATE TABLE `ProductsTemp` ( 	`Id`	INTEGER PRIMARY KEY AUTOINCREMENT,	`Name`	TEXT,	`Description`	TEXT,	`LastUpdatedDate`	LONG,	`Deleted`	INTEGER,	`VAT`	REAL,	`RemoteId`	INTEGER NOT NULL,	`Price`	INTEGER,	`Tile`	INTEGER);

@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    style="@style/list_view_row_container"
+    android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/grid_card_default">
+
+            <ImageButton
+                android:id="@+id/receipt_delete_line"
+                android:layout_width="70dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/ic_action_cancel"
+                android:background="@drawable/button_transparent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="@string/till_checkout_receipt_row_remove_content"
+                android:alpha="0.6"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/receipt_delete_line"
+                android:layout_toLeftOf="@+id/receipt_delete_line"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/receipt_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dummy_data_product_title"
+                    android:layout_weight="2"
+                    style="@style/product_list_item_title"/>
+
+                <TextView
+                    android:id="@+id/receipt_sku_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dummy_data_price_low"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    style="@style/text_base"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+</RelativeLayout>

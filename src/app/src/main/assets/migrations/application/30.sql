@@ -1,0 +1,1 @@
+ALTER TABLE ProductsTemp RENAME TO Products;

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<clowdtech.mpositive.areas.till.views.EditableReceiptViewImpl xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp">
+
+    <Button
+        android:id="@+id/till_save_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/receipt_save"
+        android:layout_above="@+id/till_print_order"
+        android:background="@drawable/button_secondary"
+        android:layout_centerHorizontal="true"
+        style="@style/button_secondary"/>
+
+    <Button
+        android:id="@+id/till_print_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/receipt_print"
+        android:layout_above="@+id/till_clear_order"
+        android:background="@drawable/button_secondary"
+        android:layout_centerHorizontal="true"
+        style="@style/button_secondary"/>
+
+    <Button
+        android:id="@+id/till_clear_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/receipt_clear"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_secondary"
+        android:layout_centerHorizontal="true"
+        style="@style/button_secondary"/>
+
+    <ListView
+        android:id="@+id/checkout_lines"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/till_save_order"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_marginTop="5dp">
+
+    </ListView>
+
+</clowdtech.mpositive.areas.till.views.EditableReceiptViewImpl>

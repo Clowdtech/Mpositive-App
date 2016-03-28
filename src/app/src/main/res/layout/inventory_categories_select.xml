@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/searchInput"
+        style="@style/category_search_input" />
+
+    <Button
+        android:id="@+id/add_item"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        style="@style/products_new_item" />
+
+    <clowdtech.mpositive.areas.shared.views.ExpandedHeightGridView
+        android:id="@+id/gridView"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        style="@style/products_grid_edit" />
+
+</LinearLayout>

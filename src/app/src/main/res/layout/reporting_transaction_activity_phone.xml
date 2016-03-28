@@ -1,0 +1,22 @@
+<clowdtech.mpositive.areas.reporting.transaction.SinglePaneContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false">
+
+    <include
+        layout="@layout/action_bar" />
+
+    <RelativeLayout
+        android:id="@+id/view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar">
+
+        <include layout="@layout/reporting_transaction_periods"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+
+    </RelativeLayout>
+
+</clowdtech.mpositive.areas.reporting.transaction.SinglePaneContainer>

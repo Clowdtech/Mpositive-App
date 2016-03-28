@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="itemLayout" format="reference" />
+    <attr name="newItemAvailable" format="boolean" />
+    <attr name="searchAvailable" format="boolean" />
+
+    <declare-styleable name="ClowdPagerTabStrip">
+        <attr name="indicatorColor" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="CategorySelectView">
+        <attr name="itemLayout" />
+        <attr name="newItemAvailable" />
+        <attr name="searchAvailable" />
+    </declare-styleable>
+
+    <declare-styleable name="ProductSelectView">
+        <attr name="itemLayout" />
+        <attr name="newItemAvailable" />
+        <attr name="searchAvailable" />
+    </declare-styleable>
+
+    <declare-styleable name="NumericEntryPadView">
+        <attr name="keypadVisible" format="boolean" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clowdtech.mpositive.areas.inventory.views.CategoriesView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:padding="5dp">
+
+    <clowdtech.mpositive.areas.inventory.views.CategorySelectView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+</clowdtech.mpositive.areas.inventory.views.CategoriesView>

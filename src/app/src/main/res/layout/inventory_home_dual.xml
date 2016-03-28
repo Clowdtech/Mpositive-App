@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clowdtech.mpositive.areas.inventory.views.InventoryDualView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <include layout="@layout/composite_view_pager"
+        android:id="@+id/viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible"/>
+
+</clowdtech.mpositive.areas.inventory.views.InventoryDualView>

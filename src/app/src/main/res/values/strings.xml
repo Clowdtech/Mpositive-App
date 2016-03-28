@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
+
+    <string name="app_name">MPOSitive</string>
+    <string name="app_name_short">MPOSitive</string>
+    <string name="receipt_clear"><u>Clear</u></string>
+    <string name="receipt_print"><u>Print</u></string>
+    <string name="receipt_save"><u>Save</u></string>
+
+    <string name="captions_name">Name</string>
+    <string name="captions_tile">Tile</string>
+    <string name="captions_vat">VAT</string>
+    <string name="captions_price">Price</string>
+    <string name="caption_order_save">Save order?</string>
+    <string name="caption_order_load_with_existing">Discard current order?</string>
+
+    <string name="captions_tender_record_payment">Record payment</string>
+    <string name="captions_tender_card">Card</string>
+    <string name="captions_tender_card_amount">paying by card</string>
+    <string name="captions_tender_cash">Cash</string>
+    <string name="captions_tender_other">Other</string>
+    <string name="captions_tender_print_receipt">Print</string>
+    <string name="captions_share">Share</string>
+    <string name="captions_print">Print</string>
+
+    <string name="captions_till_receipt_noroceipt">None</string>
+    <string name="captions_till_receipt_newsale">New Sale</string>
+    <string name="captions_tender_complete_success">Success</string>
+    <string name="captions_tender_complete_change">Change to be provided: %s</string>
+    <string name="till_checkout_cta_charge">Charge</string>
+
+    <string name="captions_command_note">Note</string>
+    <string name="captions_clear">clear</string>
+    <string name="captions_open">open</string>
+    <string name="captions_close">close</string>
+    <string name="captions_receipt_refund">Refund</string>
+    <string name="captions_receipt_refunded">Refunded</string>
+    <string name="report_transaction_day_month">Transactions for %s</string>
+    <string name="action_new_product">new product</string>
+    <string name="nav_menu_till">Checkout</string>
+    <string name="nav_menu_reporting_transaction">Transactions Report</string>
+    <string name="nav_menu_product_reporting">Products Report</string>
+    <string name="nav_menu_products">Inventory</string>
+
+
+    <string name="preferences_title">Settings</string>
+
+    <string name="preference_printer_group_key">pref_printer_key</string>
+    <string name="preference_printer_group_name">Hardware</string>
+
+    <string name="preference_printer_integration_key">pref_printer_integration</string>
+    <string name="preference_printer_integration_title">Printer</string>
+    <bool name="preference_printer_integration_default">true</bool>
+
+    <string name="preference_printer_name_key">pref_printer_name</string>
+    <string name="preference_printer_name_title">Device</string>
+    <string name="preference_printer_name_default" />
+
+    <string name="preference_printer_connection_key">pref_printer_connection</string>
+    <string name="preference_printer_connection_title">Bluetooth</string>
+    <string name="preference_printer_connection_default">0</string>
+
+    <string name="preference_printer_command_key">pref_printer_command</string>
+    <string name="preference_printer_command_title">Command Type</string>
+    <string name="preference_printer_command_default">Line</string>
+
+    <string name="preference_printer_cashdrawer_key">pref_printer_cashdrawern</string>
+    <string name="preference_printer_cashdrawer_title">Cash Drawer</string>
+    <bool name="preference_printer_cashdrawer_default">true</bool>
+
+    <string name="preference_printer_retry_key">pref_printer_retry</string>
+    <string name="preference_printer_retry_title">Retry</string>
+    <string name="preference_printer_retry_default">0</string>
+
+    <string name="preference_sync_account">pref_sync_account</string>
+
+    <string name="preference_receipt_header">pref_receipt_header</string>
+    <string name="preference_receipt_footer">pref_receipt_footer</string>
+
+    <string name="captions_command_pop">open</string>
+    <string name="search_hint">Search for a product</string>
+    <string name="search_title">Search</string>
+    <string name="captions_description">Description</string>
+    <string name="captions_visible_on_till">Visibility on Till</string>
+    <string name="captions_visible_on_home">Home Page</string>
+    <string name="captions_visible_in_category">Category</string>
+    <string name="about_title">About</string>
+    <string name="load_more_button_caption">Load More</string>
+    <string name="reporting_today_caption">Today</string>
+
+    <string name="reporting_transactions_header">Transactions Report</string>
+    <string name="reporting_transactions_recent">Last 10</string>
+    <string name="reporting_products_col_grouping">Product</string>
+    <string name="reporting_products_col_figures">Count (Total)</string>
+
+    <string name="reporting_product_header">Product Report</string>
+
+    <string name="tender_pop_drawer">pop drawer</string>
+
+    <string name="dummy_data_product_title">product name</string>
+    <string name="dummy_data_price_low">£3.67</string>
+    <string name="dummy_data_price_high">£5,382.67</string>
+    <string name="dummy_data_product_count">3</string>
+    <string name="receipt_editable_count_decrement">increase product count</string>
+    <string name="receipt_editable_count_increment">increase product count</string>
+    <string name="dummy_data_nav_title">Navigation Item</string>
+    <string name="nav_item_description">navigation item</string>
+    <string name="dummy_data_transactions_period">transactions for period</string>
+    <string name="reporting_payment_type_card">Card</string>
+    <string name="reporting_payment_type_cash">Cash</string>
+    <string name="reporting_payment_type_other">Other</string>
+    <string name="dummy_data_items_count">4 items</string>
+    <string name="reporting_transactions_count_single">%s transaction</string>
+    <string name="reporting_transactions_count_multiple">%s transactions</string>
+
+    <string name="shared_receipt_summary_total">Total</string>
+    <string name="shared_receipt_summary_paid">Paid</string>
+    <string name="shared_receipt_summary_change">Change</string>
+    <string name="till_checkout_command_one">1</string>
+    <string name="till_checkout_command_two">2</string>
+    <string name="till_checkout_command_three">3</string>
+    <string name="till_checkout_command_four">4</string>
+    <string name="till_checkout_command_five">5</string>
+    <string name="till_checkout_command_six">6</string>
+    <string name="till_checkout_command_seven">7</string>
+    <string name="till_checkout_command_eight">8</string>
+    <string name="till_checkout_command_nine">9</string>
+    <string name="till_checkout_command_zero">0</string>
+    <string name="till_checkout_command_double_zero">00</string>
+    <string name="till_checkout_command_add">add</string>
+    <string name="till_checkout_receipt_row_remove_content">remove manual entry from receipt</string>
+    <string name="till_receipt_export_type_question">How would you like your receipt?</string>
+    <string name="default_data_currency_zero">0.00</string>
+    <string name="preference_about_title">About</string>
+    <string name="till_sections_receipt_header">RECEIPT</string>
+    <string name="till_sections_commands_header">KEYPAD</string>
+    <string name="till_sections_products_header">PRODUCT CATALOG</string>
+    <string name="till_sections_payments_header">PAYMENT METHOD</string>
+    <string name="till_sections_complete_header">PAYMENT COMPLETE</string>
+    <string name="captions_product_save">Save</string>
+    <string name="captions_product_create">Create</string>
+    <string name="content_description_product_edit">edit product</string>
+    <string name="content_description_product_add">add product</string>
+
+    <string-array name="command_types" translatable="false">
+        <item >Line</item>
+        <item >Raster</item>
+    </string-array>
+
+    <string-array name="command_types_values" translatable="false">
+        <item >Line</item>
+        <item >Raster</item>
+    </string-array>
+
+    <string-array name="security_settings" translatable="false">
+        <item >SSP</item>
+        <item >PIN Code</item>
+    </string-array>
+
+    <string-array name="security_settings_values" translatable="false">
+        <item >0</item>
+        <item >1</item>
+    </string-array>
+
+    <string-array name="retry_type" translatable="false">
+        <item >OFF</item>
+        <item >ON</item>
+    </string-array>
+
+    <string-array name="retry_type_values" translatable="false">
+        <item >0</item>
+        <item >1</item>
+    </string-array>
+
+    <string name="entry_propertyType">Property Type</string>
+    <string name="captions_categories">Categories</string>
+    <string name="captions_products">Products</string>
+    <string name="products_category_add_title">Add %1$s to a new Category</string>
+    <string name="products_category_remove_title">Remove %1$s from %2$s?</string>
+    <string name="products_category_remove_description">Are you sure you wish to continue?</string>
+    <string name="products_search_hint">Search for a product</string>
+    <string name="product_delete_title">Delete %1$s?</string>
+    <string name="product_delete_message">This action cannot be undone.</string>
+
+    <string name="categories_search_hint">Search for a category</string>
+    <string name="category_product_remove_title">Remove %1$s from %2$s?</string>
+
+    <string-array name="propertyTypeList">
+        <item>0</item>
+        <item>5</item>
+        <item>20</item>
+    </string-array>
+
+    <string name="SyncEndPoint">http://mpositive-site.apphb.com/api</string>
+
+    <!-- Default title for color picker dialog [CHAR LIMIT=30] -->
+    <string name="color_picker_default_title">Select a Color</string>
+    <string name="color_picker_foreground_title">Select a Text Color</string>
+    <string name="color_picker_background_title">Select a Background Color</string>
+    <!-- Content description for a color square. -->
+    <string name="color_swatch_description">Color <xliff:g id="color_index" example="14">%1$d</xliff:g></string>
+    <!-- Content description for a selected color square. -->
+    <string name="color_swatch_description_selected">Color <xliff:g id="color_index" example="14">%1$d</xliff:g> selected</string>
+
+    <!--feature toggle-->
+    <string name="FeatureToggle_ProductSync">false</string>
+
+    <string name="loading_products">Loading Products</string>
+    <string name="loading_categories">Loading Categories</string>
+</resources>

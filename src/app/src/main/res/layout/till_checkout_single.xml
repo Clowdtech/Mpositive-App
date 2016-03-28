@@ -1,0 +1,30 @@
+<clowdtech.mpositive.areas.till.views.CheckoutSingleView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:divider="?android:attr/dividerHorizontal"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <TextView
+        android:id="@+id/order_reference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/goToCharge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/till_checkout_cta_charge"
+        android:layout_alignParentBottom="true"
+        style="@style/button_cta" />
+
+    <include layout="@layout/composite_view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/goToCharge"
+        android:layout_below="@+id/order_reference"
+        android:visibility="visible"/>
+
+</clowdtech.mpositive.areas.till.views.CheckoutSingleView>

@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <clowdtech.mpositive.controls.TileContainer
+        android:id="@+id/item_container"
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/grid_card">
+
+        <TextView
+            android:id="@+id/tile_title"
+            style="@style/product_grid_item_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="4dp"
+            android:text="@string/dummy_data_product_title" />
+
+    </clowdtech.mpositive.controls.TileContainer>
+
+</LinearLayout>

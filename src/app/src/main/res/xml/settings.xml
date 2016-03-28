@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <PreferenceCategory
+        android:key="@string/preference_printer_group_key"
+        android:title="@string/preference_printer_group_name">
+
+        <CheckBoxPreference
+            android:defaultValue="@bool/preference_printer_integration_default"
+            android:key="@string/preference_printer_integration_key"
+            android:summaryOff="Integration Disabled"
+            android:summaryOn="Integration Enabled"
+            android:title="@string/preference_printer_integration_title" />
+
+        <clowdtech.mpositive.areas.settings.PrintersPreference
+            android:defaultValue="@string/preference_printer_name_default"
+            android:dialogTitle="Device"
+            android:key="@string/preference_printer_name_key"
+            android:summary=""
+            android:title="@string/preference_printer_name_title" />
+
+        <ListPreference
+            android:defaultValue="@string/preference_printer_command_default"
+            android:dialogTitle="Command Type"
+            android:entries="@array/command_types"
+            android:entryValues="@array/command_types_values"
+            android:key="@string/preference_printer_command_key"
+            android:summary=""
+            android:title="@string/preference_printer_command_title" />
+
+        <ListPreference
+            android:defaultValue="@string/preference_printer_connection_default"
+            android:dialogTitle="Bluetooth"
+            android:entries="@array/security_settings"
+            android:entryValues="@array/security_settings_values"
+            android:key="@string/preference_printer_connection_key"
+            android:summary=""
+            android:title="@string/preference_printer_connection_title" />
+
+        <ListPreference
+            android:defaultValue="@string/preference_printer_retry_default"
+            android:dialogTitle="Retry"
+            android:entries="@array/retry_type"
+            android:entryValues="@array/retry_type_values"
+            android:key="@string/preference_printer_retry_key"
+            android:summary=""
+            android:title="@string/preference_printer_retry_title" />
+
+        <CheckBoxPreference
+            android:defaultValue="@bool/preference_printer_cashdrawer_default"
+            android:key="@string/preference_printer_cashdrawer_key"
+            android:summaryOff="Integration Disabled"
+            android:summaryOn="Integration Enabled"
+            android:title="@string/preference_printer_cashdrawer_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Receipt">
+
+        <EditTextPreference
+            android:defaultValue="MPOSitive"
+            android:dialogTitle="Header"
+            android:key="@string/preference_receipt_header"
+            android:summary="Header"
+            android:title="Header" />
+
+        <EditTextPreference
+            android:defaultValue=""
+            android:dialogTitle="Footer"
+            android:key="@string/preference_receipt_footer"
+            android:summary="Footer"
+            android:title="Footer" />
+
+    </PreferenceCategory>
+
+    <!--<PreferenceCategory android:title="Sync" >-->
+
+        <!--<EditTextPreference-->
+            <!--android:defaultValue=""-->
+            <!--android:dialogTitle="Account"-->
+            <!--android:key="@string/preference_sync_account"-->
+            <!--android:summary="Account"-->
+            <!--android:title="Account" />-->
+
+    <!--</PreferenceCategory>-->
+
+    <Preference android:title="@string/preference_about_title">
+        <intent
+            android:targetClass="clowdtech.mpositive.activities.AboutActivity"
+            android:targetPackage="clowdtech.pos.mpositive" />
+    </Preference>
+</PreferenceScreen>

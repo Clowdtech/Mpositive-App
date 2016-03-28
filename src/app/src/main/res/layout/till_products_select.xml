@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <clowdtech.mpositive.areas.shared.views.ExpandedHeightGridView
+        android:id="@+id/gridView"
+        android:padding="5dp"
+        style="@style/products_grid_till" />
+
+</LinearLayout>

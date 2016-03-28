@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clowdtech.mpositive.areas.till.views.CommandPadView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/button_command_pad_b">
+
+        <TextView
+            android:id="@+id/subTotal"
+            style="@style/text_secondary"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="@string/default_data_currency_zero"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/commands_sku_name"
+            style="@style/text_secondary"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/subTotal"
+            android:layout_toStartOf="@+id/subTotal"
+            android:background="@drawable/edittext_color_primary"
+            android:gravity="center_vertical"
+            android:hint="@string/captions_command_note"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+    </RelativeLayout>
+
+    <clowdtech.mpositive.areas.shared.views.NumericEntryPadView
+        android:id="@+id/numeric_entry"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@drawable/button_command_pad_b" />
+
+    <LinearLayout
+        android:id="@+id/command_pop_row"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="fill_horizontal"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/command_add"
+            style="@style/nummerPad"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_command_pad_br"
+            android:text="Add" />
+
+    </LinearLayout>
+
+</clowdtech.mpositive.areas.till.views.CommandPadView>

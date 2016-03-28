@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/list_view_row_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/product_reporting_row_layout"
+        style="@style/list_view_card_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_row">
+
+        <TextView
+            android:id="@+id/product_reporting_row_quantity"
+            style="@style/list_view_text"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:text="@string/dummy_data_product_count" />
+
+        <TextView
+            android:id="@+id/product_reporting_row_name"
+            style="@style/list_view_text"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/product_reporting_row_quantity"
+            android:layout_toStartOf="@+id/product_reporting_row_quantity"
+            android:text="@string/dummy_data_product_title" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<clowdtech.mpositive.areas.till.views.CheckoutDualView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/order_reference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <include
+            android:id="@+id/receipt_editable"
+            layout="@layout/till_checkout_receipt_editable"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/order_reference"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="2">
+
+        <Button
+            android:id="@+id/goToCharge"
+            style="@style/button_cta"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/till_checkout_cta_charge" />
+
+        <include
+            layout="@layout/composite_view_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/goToCharge" />
+
+    </RelativeLayout>
+
+</clowdtech.mpositive.areas.till.views.CheckoutDualView>

@@ -1,0 +1,23 @@
+<resources>
+    <!--
+    Layout alias to replace the single-pane version of the layout with a
+    two-pane version on Large screens.
+
+    For more on layout aliases, see:
+    http://developer.android.com/training/multiscreen/screensizes.html#TaskUseAliasFilters
+    -->
+    <item type="layout" name="till_activity">@layout/till_activity_single</item>
+    <item type="layout" name="till_tender_activity">@layout/till_tender_activity_phone</item>
+    <item type="layout" name="products_activity">@layout/inventory_activity_single</item>
+    <item type="layout" name="activity_reporting">@layout/reporting_transaction_activity_phone</item>
+    <item type="layout" name="activity_product_reporting">@layout/product_reporting_activity_phone</item>
+    <item type="layout" name="inventory_product">@layout/inventory_product_single</item>
+    <item type="layout" name="inventory_category">@layout/inventory_category_single</item>
+    <item type="layout" name="till_tender_payment_method">@layout/till_tender_payment_method_single</item>
+
+    <!--reporting-->
+    <item type="layout" name="reporting_transaction_periods">@layout/reporting_transaction_periods_phone</item>
+
+    <!--drawables-->
+    <item type="drawable" name="list_selection">@drawable/button_drill</item>
+</resources>

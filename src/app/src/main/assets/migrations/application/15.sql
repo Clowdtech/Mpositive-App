@@ -1,0 +1,1 @@
+ALTER TABLE Products ADD COLUMN LastUpdatedDate LONG NULL;

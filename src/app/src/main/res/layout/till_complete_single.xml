@@ -1,0 +1,67 @@
+<clowdtech.mpositive.areas.till.views.PaymentCompleteSingleView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:divider="?android:attr/dividerHorizontal"
+    android:orientation="vertical"
+    android:showDividers="middle"
+    tools:context=".tender">
+
+    <LinearLayout
+        android:id="@+id/tender_receipt_options"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/tender_no_receipt"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="@string/captions_till_receipt_noroceipt"
+            style="@style/button_cta_split" />
+
+        <RelativeLayout
+            android:id="@+id/tender_print_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/tender_print_receipt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/captions_tender_print_receipt"
+                style="@style/button_cta_split"/>
+
+            <ProgressBar
+                android:id="@+id/tender_print_progress"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tender_total_seperator"
+        android:layout_above="@+id/tender_receipt_options">
+
+        <clowdtech.mpositive.controls.ClowdPagerTabStrip
+            android:id="@+id/pager_title_strip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            app:indicatorColor="@color/brand_primary"
+            style="@style/pager_tab_strip" />
+
+    </android.support.v4.view.ViewPager>
+
+</clowdtech.mpositive.areas.till.views.PaymentCompleteSingleView>

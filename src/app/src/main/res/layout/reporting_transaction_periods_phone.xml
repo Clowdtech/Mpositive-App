@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<clowdtech.mpositive.areas.reporting.transaction.views.TransactionPeriodsView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/loading_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/activity_receipt_tablet_more_receipts_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/reporting_header"
+        android:text="@string/reporting_transactions_header" />
+
+    <ListView
+        android:id="@+id/reporting_days_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/activity_receipt_tablet_more_receipts_text"
+        android:verticalSpacing="2dp"
+        android:stretchMode="columnWidth"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:choiceMode="singleChoice"
+        android:listSelector="@android:color/transparent">
+
+    </ListView>
+
+</clowdtech.mpositive.areas.reporting.transaction.views.TransactionPeriodsView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <!-- Ignore the UnusedResources -->
+    <issue id="UnusedResources">
+        <ignore path="res/xml/tracker_app.xml" />
+    </issue>
+</lint>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:drawable="@color/button_positive_pressed"
+            android:state_pressed="true"/> <!-- pressed -->
+
+        <item android:drawable="@color/button_positive_focused"
+            android:state_focused="true"/> <!-- focused -->
+
+        <item android:drawable="@color/brand_accent"
+            android:color="@color/font_primary"
+            android:state_enabled="false"/>
+
+        <item android:drawable="@color/brand_primary"/> <!-- default -->
+</selector>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="fill_horizontal"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button android:id="@+id/command_num_1"
+            android:text="@string/till_checkout_command_one"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:background="@drawable/button_command_pad_br"
+            style="@style/nummerPad"/>
+
+        <Button android:id="@+id/command_num_2"
+            android:text="@string/till_checkout_command_two"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_command_pad_br"
+            style="@style/nummerPad"/>
+
+        <Button android:id="@+id/command_num_3"
+            android:text="@string/till_checkout_command_three"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_command_pad_b"
+            style="@style/nummerPad"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="fill_horizontal"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button android:id="@+id/command_num_4"
+            android:text="@string/till_checkout_command_four"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_command_pad_br"
+            style="@style/nummerPad"/>
+
+        <Button android:id="@+id/command_num_5"
+            android:text="@string/till_checkout_command_five"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_command_pad_br"
+            style="@style/nummerPad"/>
+
+        <Button android:id="@+id/command_num_6"
+            android:text="@string/till_checkout_command_six"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_command_pad_b"
+            style="@style/nummerPad"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="fill_horizontal"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button android:id="@+id/command_num_7"
+            android:text="@string/till_checkout_command_seven"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_command_pad_br"
+            style="@style/nummerPad"/>
+
+        <Button android:id="@+id/command_num_8"
+            android:text="@string/till_checkout_command_eight"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_command_pad_br"
+            style="@style/nummerPad"/>
+
+        <Button android:id="@+id/command_num_9"
+            android:text="@string/till_checkout_command_nine"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_command_pad_b"
+            style="@style/nummerPad"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="fill_horizontal"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button android:id="@+id/command_clear"
+            android:text="@string/captions_clear"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_command_pad_r"
+            style="@style/nummerPad" />
+
+        <Button android:id="@+id/command_num_0"
+            android:text="@string/till_checkout_command_zero"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_command_pad_r"
+            style="@style/nummerPad"/>
+
+        <Button android:id="@+id/command_num_00"
+            android:text="@string/till_checkout_command_double_zero"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_command_pad_n"
+            style="@style/nummerPad" />
+
+    </LinearLayout>
+
+</LinearLayout>

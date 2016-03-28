@@ -1,0 +1,70 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="product_list_item_title" parent="list_view_text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="product_grid_item_title" parent="list_view_text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+    </style>
+
+    <style name="products_grid">
+        <item name="android:numColumns">auto_fit</item>
+        <item name="android:stretchMode">columnWidth</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:verticalSpacing">4dp</item>
+        <item name="android:horizontalSpacing">4dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0dp</item>
+    </style>
+
+    <style name="products_grid_till" parent="products_grid">
+        <item name="android:columnWidth">100dp</item>
+    </style>
+
+    <style name="products_grid_edit" parent="products_grid">
+        <item name="android:columnWidth">150dp</item>
+    </style>
+
+    <style name="products_grid_select" parent="products_grid">
+        <item name="android:columnWidth">100dp</item>
+    </style>
+
+    <style name="product_search_input" parent="search_input">
+        <item name="android:hint">@string/products_search_hint</item>
+    </style>
+
+    <style name="category_search_input" parent="search_input">
+        <item name="android:hint">@string/categories_search_hint</item>
+    </style>
+
+    <style name="products_area_select_button" parent="text_base">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:background">@drawable/button_drill</item>
+    </style>
+
+    <style name="products_new_item" parent="filter_entry_container">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:background">@drawable/button_new_item</item>
+    </style>
+
+    <style name="products_delete_item" parent="button_cta_split">
+        <item name="android:textColor">@color/background_white</item>
+        <item name="android:background">@drawable/button_cta_negative</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:height">30dp</item>
+    </style>
+
+</resources>
