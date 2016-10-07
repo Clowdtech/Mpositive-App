@@ -8,7 +8,6 @@ import android.widget.LinearLayout;
 
 import clowdtech.mpositive.R;
 import clowdtech.mpositive.areas.preferences.PreferencesFrag;
-import clowdtech.mpositive.tracking.TrackingConstants;
 
 public class PreferenceActivity extends BaseActivity {
 
@@ -39,6 +38,6 @@ public class PreferenceActivity extends BaseActivity {
     protected void onResume() {
         super.onResume();
 
-        trackScreenView(TrackingConstants.ScreenNames.Settings);
+        //trackScreenView(TrackingConstants.ScreenNames.Settings);
     }
 }

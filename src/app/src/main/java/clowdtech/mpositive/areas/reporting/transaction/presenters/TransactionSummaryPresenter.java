@@ -32,7 +32,6 @@ import clowdtech.mpositive.areas.reporting.transaction.IShareController;
 import clowdtech.mpositive.areas.reporting.transaction.captions.CaptionsTransactionSummary;
 import clowdtech.mpositive.areas.reporting.transaction.viewModels.TransactionListItemViewModel;
 import clowdtech.mpositive.areas.reporting.transaction.views.ITransactionSummaryView;
-import clowdtech.mpositive.data.ManualEntry;
 import clowdtech.mpositive.data.StockUnit;
 import clowdtech.mpositive.data.lines.EntryLineManual;
 import clowdtech.mpositive.data.lines.EntryLineProduct;

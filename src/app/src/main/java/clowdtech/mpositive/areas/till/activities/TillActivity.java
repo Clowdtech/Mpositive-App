@@ -1,5 +1,8 @@
 package clowdtech.mpositive.areas.till.activities;
 
+import android.app.ActivityManager;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -20,6 +23,7 @@ import clowdtech.mpositive.TaskListener;
 import clowdtech.mpositive.activities.NavDrawerActivity;
 import clowdtech.mpositive.areas.preferences.PreferenceEntry;
 import clowdtech.mpositive.areas.till.Container;
+import clowdtech.mpositive.easydata.SyncService;
 import clowdtech.mpositive.queue.IEventBus;
 import clowdtech.mpositive.queue.events.MenuItemVisibilityEvent;
 import clowdtech.mpositive.queue.events.MenuSelectedEvent;
@@ -28,6 +32,9 @@ import clowdtech.mpositive.receipt.PopCashDrawerAsync;
 import clowdtech.mpositive.ui.Presentable;
 
 public class TillActivity extends NavDrawerActivity {
+    public static int INT_POLLSERVICE_ID = 456;
+    Intent syncServiceIntent;
+
     private Container container;
 
     @Inject
@@ -64,6 +71,11 @@ public class TillActivity extends NavDrawerActivity {
 
         if (prefs.getCashDrawerIntegrated()) {
             setupDrawerPop();
+        }
+
+        if (!ServiceRunning(INT_POLLSERVICE_ID)) {
+            syncServiceIntent = new Intent(TillActivity.this, SyncService.class);
+            startService(syncServiceIntent);
         }
     }
 
@@ -177,5 +189,18 @@ public class TillActivity extends NavDrawerActivity {
                 }).execute();
             }
         });
+    }
+
+
+    private boolean ServiceRunning(int serviceId) {
+        ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+        for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
+            if(serviceId == INT_POLLSERVICE_ID) {
+                if (SyncService.class.getName().equals(service.service.getClassName())) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

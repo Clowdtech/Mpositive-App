@@ -3,15 +3,12 @@ package clowdtech.mpositive.activities;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
-import android.support.v7.widget.Toolbar;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.TextView;
 
 import clowdtech.mpositive.R;
-import clowdtech.mpositive.tracking.TrackingConstants;
 
 public class AboutActivity extends BaseActionBarActivity {
 
@@ -63,6 +60,6 @@ public class AboutActivity extends BaseActionBarActivity {
     protected void onResume() {
         super.onResume();
 
-        trackScreenView(TrackingConstants.ScreenNames.About);
+        //trackScreenView(TrackingConstants.ScreenNames.About);
     }
 }

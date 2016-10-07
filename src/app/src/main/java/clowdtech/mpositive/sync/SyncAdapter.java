@@ -15,8 +15,6 @@ import com.clowdtech.data.repository.IProductRepository;
 import com.clowdtech.data.repository.ISyncRepository;
 import com.clowdtech.data.repository.RepositoryProvider;
 
-import java.util.Objects;
-
 import clowdtech.mpositive.R;
 import clowdtech.mpositive.sync.api.ISyncProductApiService;
 import retrofit.RestAdapter;

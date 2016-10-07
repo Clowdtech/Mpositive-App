@@ -5,6 +5,9 @@ import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.preference.PreferenceManager;
 
+import clowdtech.mpositive.R;
+
+
 public class MposPreferences implements ISharedPreferences {
     private final String printCommandType;
     private final String header;

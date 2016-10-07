@@ -9,7 +9,6 @@ import javax.inject.Singleton;
 
 import clowdtech.mpositive.App;
 import clowdtech.mpositive.ISharedPreferences;
-import clowdtech.mpositive.ITracker;
 import clowdtech.mpositive.activities.BaseActivity;
 import clowdtech.mpositive.activities.SplashActivity;
 import clowdtech.mpositive.areas.inventory.views.AreaSelectView;
@@ -54,7 +53,7 @@ public interface ApplicationComponent {
 
     IEventBus eventBus();
 
-    ITracker tracker();
+    //ITracker tracker();
 
     ISharedPreferences sharedPreferences();
 

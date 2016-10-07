@@ -11,7 +11,6 @@ import javax.inject.Singleton;
 
 import clowdtech.mpositive.App;
 import clowdtech.mpositive.ISharedPreferences;
-import clowdtech.mpositive.ITracker;
 import clowdtech.mpositive.MposPreferences;
 import clowdtech.mpositive.data.InventoryStore;
 import clowdtech.mpositive.data.InventoryStoreImpl;
@@ -61,11 +60,6 @@ public class ApplicationModule {
     @Singleton
     Resources provideResources() {
         return this.application.getResources();
-    }
-
-    @Provides
-    ITracker provideTracker() {
-        return this.application;
     }
 
     @Provides

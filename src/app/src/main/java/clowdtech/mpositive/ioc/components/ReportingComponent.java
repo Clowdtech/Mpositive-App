@@ -8,7 +8,6 @@ import clowdtech.mpositive.areas.reporting.transaction.captions.CaptionsTransact
 import clowdtech.mpositive.areas.reporting.transaction.views.ReceiptView;
 import clowdtech.mpositive.areas.reporting.transaction.views.TransactionPeriodsView;
 import clowdtech.mpositive.areas.reporting.transaction.views.TransactionSummaryView;
-import clowdtech.mpositive.ioc.modules.PrintingModule;
 import clowdtech.mpositive.ioc.modules.ReportingModule;
 import clowdtech.mpositive.ioc.scopes.ActivityScope;
 import dagger.Component;

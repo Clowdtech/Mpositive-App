@@ -7,8 +7,6 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.AsyncTask;
-import android.os.Handler;
-import android.os.SystemClock;
 import android.preference.PreferenceManager;
 
 import com.starmicronics.stario.StarIOPortException;

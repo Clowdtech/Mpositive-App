@@ -1,16 +1,12 @@
 package clowdtech.mpositive.receipt;
 
 import android.content.Context;
-import android.content.SharedPreferences;
-import android.content.res.Resources;
-import android.preference.PreferenceManager;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
 import clowdtech.mpositive.ISharedPreferences;
-import clowdtech.mpositive.R;
 import clowdtech.mpositive.TaskListener;
 import clowdtech.mpositive.areas.shared.models.ReceiptLinePrintModel;
 import clowdtech.mpositive.data.transactions.entities.Receipt;

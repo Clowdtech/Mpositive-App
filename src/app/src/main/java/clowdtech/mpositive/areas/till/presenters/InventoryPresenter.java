@@ -4,8 +4,8 @@ import android.content.res.Resources;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
 
-import com.clowdtech.data.entities.IProduct;
 import com.clowdtech.data.entities.Category;
+import com.clowdtech.data.entities.IProduct;
 import com.clowdtech.data.entities.IProductTile;
 import com.clowdtech.data.repository.IProductRepository;
 import com.squareup.otto.Subscribe;
@@ -17,21 +17,18 @@ import java.util.List;
 
 import javax.inject.Inject;
 
-import clowdtech.mpositive.ITracker;
 import clowdtech.mpositive.R;
 import clowdtech.mpositive.areas.inventory.viewModels.ProductViewModel;
 import clowdtech.mpositive.areas.shared.InventoryItem;
 import clowdtech.mpositive.areas.till.viewModels.CategoryTileViewModel;
 import clowdtech.mpositive.areas.till.views.InventoryView;
-import clowdtech.mpositive.queue.events.RunningReceiptAddProductEvent;
-import clowdtech.mpositive.queue.events.CategoriesLoadedEvent;
 import clowdtech.mpositive.queue.IEventBus;
+import clowdtech.mpositive.queue.events.CategoriesLoadedEvent;
 import clowdtech.mpositive.queue.events.ProductsLoadedEvent;
+import clowdtech.mpositive.queue.events.RunningReceiptAddProductEvent;
 import clowdtech.mpositive.ui.BasePresenter;
 
 public class InventoryPresenter extends BasePresenter<InventoryView> {
-    private final ITracker tracker;
-
     private final IEventBus eventBus;
     private final IProductRepository productRepo;
 
@@ -48,8 +45,7 @@ public class InventoryPresenter extends BasePresenter<InventoryView> {
     private final int defaultCategoryBackground;
 
     @Inject
-    public InventoryPresenter(ITracker tracker, Resources resources, IEventBus eventBus, IProductRepository productRepo) {
-        this.tracker = tracker;
+    public InventoryPresenter(Resources resources, IEventBus eventBus, IProductRepository productRepo) {
 
         this.eventBus = eventBus;
         this.productRepo = productRepo;

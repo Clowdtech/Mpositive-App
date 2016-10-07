@@ -36,6 +36,7 @@ public class CategoryDbf extends BaseModel implements Category {
         return name;
     }
 
+
     @Override
     public CategoryTileDbf getTile() {
         return this.tileForeignKeyContainer;

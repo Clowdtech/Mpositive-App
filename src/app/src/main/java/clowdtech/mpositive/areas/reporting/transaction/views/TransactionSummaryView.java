@@ -15,7 +15,6 @@ import javax.inject.Inject;
 
 import clowdtech.mpositive.App;
 import clowdtech.mpositive.R;
-import clowdtech.mpositive.areas.reporting.transaction.IShareController;
 import clowdtech.mpositive.areas.reporting.transaction.activities.TransactionsReporting;
 import clowdtech.mpositive.areas.reporting.transaction.adapters.TransactionSummaryAdapter;
 import clowdtech.mpositive.areas.reporting.transaction.Container;

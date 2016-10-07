@@ -14,7 +14,6 @@ import clowdtech.mpositive.R;
 import clowdtech.mpositive.TaskListener;
 import clowdtech.mpositive.areas.reporting.product.adapters.ProductReportingArrayAdapter;
 import clowdtech.mpositive.areas.reporting.product.viewModels.ProductReportingItemViewModel;
-import clowdtech.mpositive.tracking.TrackingConstants;
 import clowdtech.mpositive.report.ProductReportPrinter;
 import clowdtech.mpositive.ui.fragments.BaseFragment;
 
@@ -73,7 +72,7 @@ public class ProductReportingRightFragment extends BaseFragment {
     public void onResume() {
         super.onResume();
 
-        trackScreenView(TrackingConstants.ScreenNames.ReportProductSummary);
+        //trackScreenView(TrackingConstants.ScreenNames.ReportProductSummary);
     }
 
     public void setHeading(String reportHeading) {

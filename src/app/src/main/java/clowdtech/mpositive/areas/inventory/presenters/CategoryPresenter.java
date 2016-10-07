@@ -2,10 +2,10 @@ package clowdtech.mpositive.areas.inventory.presenters;
 
 import android.graphics.Color;
 
-import com.clowdtech.data.entities.IProduct;
 import com.clowdtech.data.entities.Category;
-import com.clowdtech.data.repository.ICategoryRepository;
 import com.clowdtech.data.entities.CategoryTile;
+import com.clowdtech.data.entities.IProduct;
+import com.clowdtech.data.repository.ICategoryRepository;
 import com.squareup.otto.Subscribe;
 
 import java.util.ArrayList;
@@ -15,17 +15,14 @@ import java.util.List;
 
 import javax.inject.Inject;
 
-import clowdtech.mpositive.ITracker;
 import clowdtech.mpositive.areas.inventory.views.CategoryView;
 import clowdtech.mpositive.data.InventoryStore;
 import clowdtech.mpositive.data.commands.CategoryUpsertCommand;
 import clowdtech.mpositive.queue.IEventBus;
 import clowdtech.mpositive.queue.events.ProductsLoadedEvent;
-import clowdtech.mpositive.tracking.TrackingCategories;
 import clowdtech.mpositive.ui.BasePresenter;
 
 public class CategoryPresenter extends BasePresenter<CategoryView> {
-    private final ITracker tracker;
     private final ICategoryRepository categoryRepository;
 
     private final IEventBus eventBus;
@@ -43,12 +40,10 @@ public class CategoryPresenter extends BasePresenter<CategoryView> {
     private Long tileId;
 
     @Inject
-    public CategoryPresenter(ITracker tracker,
-                             InventoryStore inventoryStore,
+    public CategoryPresenter(InventoryStore inventoryStore,
                              ICategoryRepository categoryRepository,
                              IEventBus eventBus) {
         this.inventoryStore = inventoryStore;
-        this.tracker = tracker;
         this.categoryRepository = categoryRepository;
         this.eventBus = eventBus;
     }
@@ -137,8 +132,6 @@ public class CategoryPresenter extends BasePresenter<CategoryView> {
         });
 
         this.view.refreshCategories(this.products);
-
-        this.tracker.trackEvent(TrackingCategories.InventoryManagement, "Product Added to Category");
     }
 
     public void productRemoved(long value) {
@@ -153,8 +146,6 @@ public class CategoryPresenter extends BasePresenter<CategoryView> {
         this.products.remove(product);
 
         this.view.refreshCategories(this.products);
-
-        this.tracker.trackEvent(TrackingCategories.InventoryManagement, "Product Removed from Category");
     }
 
     public void tileForegroundColourSelected(int color) {
@@ -189,8 +180,6 @@ public class CategoryPresenter extends BasePresenter<CategoryView> {
         categoryCommand.setTileForeground(String.format("#%06X", (0xFFFFFF & this.view.getTileForegroundColor())));
 
         categoryCommand.execute();
-
-        this.tracker.trackEvent(TrackingCategories.InventoryManagement, "Category Saved");
 
         this.view.getContainer().categorySaved();
     }

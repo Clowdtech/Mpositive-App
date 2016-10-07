@@ -7,6 +7,10 @@
     <item type="layout" name="inventory_category">@layout/inventory_category_single</item>
     <item type="layout" name="till_tender_payment_method">@layout/till_tender_payment_method_single</item>
 
+    <item type="layout" name="activity_createaccount">@layout/activity_createaccount_single</item>
+    <item type="layout" name="activity_registration">@layout/activity_registration_single</item>
+    <item type="layout" name="activity_checkout">@layout/activity_checkout_single</item>
+
     <!--reporting-->
     <item type="layout" name="reporting_transaction_periods">@layout/reporting_transaction_periods_phone</item>
 

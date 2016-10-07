@@ -1,5 +1,6 @@
 package clowdtech.mpositive.activities;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -11,11 +12,13 @@ import clowdtech.mpositive.App;
 import clowdtech.mpositive.R;
 import clowdtech.mpositive.areas.till.activities.TillActivity;
 import clowdtech.mpositive.data.InventoryStore;
+import clowdtech.mpositive.easydata.DBAppFuncs;
 import clowdtech.mpositive.queue.IEventBus;
 import clowdtech.mpositive.sync.SyncUtils;
-import clowdtech.mpositive.tracking.TrackingConstants;
 
 public class SplashActivity extends BaseActivity {
+    public static int LOGIN_REQUEST_CODE = 123;
+
     @Inject
     InventoryStore inventoryStoreImpl;
 
@@ -31,11 +34,18 @@ public class SplashActivity extends BaseActivity {
 
         ((App) getApplicationContext()).getApplicationComponent().inject(this);
 
+        final DBAppFuncs dbAppFuncs = ((App) getApplicationContext()).getDBAppFunctionsObj();
+
         SyncUtils.CreateSyncAccount(getApplication());
 
         setContentView(R.layout.splash);
 
         inventoryStoreImpl.initialise();
+
+        dbAppFuncs.initMainTables();
+        dbAppFuncs.initCategories();
+        dbAppFuncs.initProducts();
+        dbAppFuncs.initTransactions();
 
         Thread splashTimer = new Thread() {
             public void run() {
@@ -84,10 +94,17 @@ public class SplashActivity extends BaseActivity {
 //                    ActiveAndroid.endTransaction();
 //                }
 
+                Intent intent;
 
+                if (dbAppFuncs.hasLogin()) {
+                    intent = new Intent(getBaseContext(), TillActivity.class);
+                    startActivity(intent);
+                }
+                else {
+                    intent = new Intent(getBaseContext(), LoginActivity.class);
+                    startActivity(intent);
+                }
 
-                Intent intent = new Intent(getBaseContext(), TillActivity.class);
-                startActivity(intent);
             }
         };
 
@@ -95,9 +112,21 @@ public class SplashActivity extends BaseActivity {
     }
 
     @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == LOGIN_REQUEST_CODE) {
+            if (resultCode == Activity.RESULT_OK) {
+                Intent intent = new Intent(getBaseContext(), TillActivity.class);
+                startActivity(intent);
+            }
+            else
+                finish();
+        }
+    }
+
+    @Override
     protected void onResume() {
         super.onResume();
 
-        trackScreenView(TrackingConstants.ScreenNames.Splash);
+        //trackScreenView(TrackingConstants.ScreenNames.Splash);
     }
 }

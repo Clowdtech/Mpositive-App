@@ -14,7 +14,6 @@ import java.util.Comparator;
 import javax.inject.Inject;
 
 import clowdtech.mpositive.ISharedPreferences;
-import clowdtech.mpositive.ITracker;
 import clowdtech.mpositive.R;
 import clowdtech.mpositive.areas.preferences.PreferenceEntry;
 import clowdtech.mpositive.areas.till.contracts.IManualLineSelection;
@@ -25,21 +24,19 @@ import clowdtech.mpositive.areas.till.views.ManualLineEditableView;
 import clowdtech.mpositive.areas.till.views.ProductLineEditableView;
 import clowdtech.mpositive.data.RunningOrder;
 import clowdtech.mpositive.queue.IEventBus;
-import clowdtech.mpositive.queue.events.OrderClearEvent;
 import clowdtech.mpositive.queue.events.ManualEntryAddedToReceipt;
 import clowdtech.mpositive.queue.events.ManualEntryRemovedFromReceipt;
+import clowdtech.mpositive.queue.events.OrderClearEvent;
 import clowdtech.mpositive.queue.events.OrderLoadedEvent;
 import clowdtech.mpositive.queue.events.OrderProductAdded;
-import clowdtech.mpositive.queue.events.OrderSaveEvent;
+import clowdtech.mpositive.queue.events.OrderProductAmended;
 import clowdtech.mpositive.queue.events.PreferenceChangedEvent;
 import clowdtech.mpositive.queue.events.ProductRemovedFromReceipt;
-import clowdtech.mpositive.queue.events.OrderProductAmended;
 import clowdtech.mpositive.queue.events.RemoveManualEntryFromReceiptEvent;
 import clowdtech.mpositive.queue.events.RemoveProductFromReceiptEvent;
 import clowdtech.mpositive.queue.events.RunningReceiptAddProductEvent;
 import clowdtech.mpositive.queue.events.RunningReceiptClearedEvent;
 import clowdtech.mpositive.receipt.IOrderExporter;
-import clowdtech.mpositive.tracking.TrackingCategories;
 import clowdtech.mpositive.ui.BasePresenter;
 
 public class EditableReceiptPresenter extends BasePresenter<EditableReceiptView> {
@@ -49,17 +46,15 @@ public class EditableReceiptPresenter extends BasePresenter<EditableReceiptView>
 
     private RunningOrder runningOrder;
     private IEventBus eventBus;
-    private final ITracker tracker;
     private IOrderExporter orderExporter;
     private ISharedPreferences sharedPreferences;
 
     private Integer maxNameLength;
 
     @Inject
-    public EditableReceiptPresenter(RunningOrder runningOrder, IEventBus eventBus, ITracker tracker, IOrderExporter orderExporter, ISharedPreferences sharedPreferences) {
+    public EditableReceiptPresenter(RunningOrder runningOrder, IEventBus eventBus, IOrderExporter orderExporter, ISharedPreferences sharedPreferences) {
         this.runningOrder = runningOrder;
         this.eventBus = eventBus;
-        this.tracker = tracker;
         this.orderExporter = orderExporter;
         this.sharedPreferences = sharedPreferences;
         this.comparator = new ReceiptLineModelComparer();
@@ -97,8 +92,6 @@ public class EditableReceiptPresenter extends BasePresenter<EditableReceiptView>
 
     public void clearRunningReceipt() {
         eventBus.post(new OrderClearEvent());
-
-        this.tracker.trackEvent(TrackingCategories.Till, "Clear Receipt", "From Editable Receipt, Item Count: " + lineModels.size());
     }
 
     @Subscribe

@@ -22,9 +22,10 @@ android {
 }
 
 dependencies {
-    compile files('../lib/joda-time-2.7.jar')
+    compile 'joda-time:joda-time:2.9.4'
 
     apt 'com.github.Raizlabs.DBFlow:dbflow-processor:3.0.0-beta1'
     compile "com.github.Raizlabs.DBFlow:dbflow-core:3.0.0-beta1"
     compile "com.github.Raizlabs.DBFlow:dbflow:3.0.0-beta1"
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
 }

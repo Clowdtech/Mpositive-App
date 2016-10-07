@@ -4,9 +4,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
-import com.clowdtech.data.entities.IOrderLineManual;
-import com.clowdtech.data.entities.ITransactionLineManual;
-
 import org.joda.time.DateTime;
 
 import java.math.BigDecimal;

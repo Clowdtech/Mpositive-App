@@ -2,7 +2,6 @@ package clowdtech.mpositive.areas.till.views;
 
 import android.content.Context;
 
-import java.math.BigDecimal;
 import java.util.ArrayList;
 
 public interface IPaymentCompleteView {

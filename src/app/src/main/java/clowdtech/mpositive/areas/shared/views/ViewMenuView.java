@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import clowdtech.mpositive.R;
 import clowdtech.mpositive.areas.shared.presenters.ViewMenuPresenter;
 
 public class ViewMenuView extends Toolbar implements IViewMenuView {

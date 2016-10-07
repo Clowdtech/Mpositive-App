@@ -1,7 +1,6 @@
 package clowdtech.mpositive.queue.events;
 
 import com.clowdtech.data.entities.IOrderLineManual;
-import com.clowdtech.data.entities.ITransactionLineManual;
 
 public class RemoveManualEntryFromReceiptEvent {
     private IOrderLineManual line;

@@ -2,7 +2,6 @@ package clowdtech.mpositive.areas.till.views;
 
 import android.content.Context;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public interface EditableReceiptView {

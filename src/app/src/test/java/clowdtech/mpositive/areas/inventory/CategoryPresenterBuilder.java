@@ -7,7 +7,6 @@ import org.mockito.Captor;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import clowdtech.mpositive.ITracker;
 import clowdtech.mpositive.areas.inventory.presenters.CategoryPresenter;
 import clowdtech.mpositive.areas.inventory.views.CategoryView;
 import clowdtech.mpositive.data.InventoryStore;
@@ -23,9 +22,6 @@ public class CategoryPresenterBuilder {
 
     @Mock
     IEventBus mockEventBus;
-
-    @Mock
-    ITracker mockTracker;
 
     @Mock
     ICategoryRepository categoryRepository;
@@ -44,7 +40,7 @@ public class CategoryPresenterBuilder {
     }
 
     public CategoryPresenter buildAndBind() {
-        CategoryPresenter presenter = new CategoryPresenter(mockTracker, inventoryStore, categoryRepository, mockEventBus);
+        CategoryPresenter presenter = new CategoryPresenter(inventoryStore, categoryRepository, mockEventBus);
 
         presenter.bindView(mockView);
 

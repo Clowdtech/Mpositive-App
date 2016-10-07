@@ -22,7 +22,6 @@ import clowdtech.mpositive.R;
 import clowdtech.mpositive.areas.reporting.IReportingDaySelected;
 import clowdtech.mpositive.areas.reporting.transaction.adapters.TransactionPeriodsArrayAdapter;
 import clowdtech.mpositive.areas.reporting.transaction.viewModels.TransactionPeriodsViewModel;
-import clowdtech.mpositive.tracking.TrackingConstants;
 import clowdtech.mpositive.data.ReportingHelper;
 import clowdtech.mpositive.ui.fragments.BaseFragment;
 
@@ -93,7 +92,7 @@ public class ReportingDaysFragment extends BaseFragment {
     public void onResume() {
         super.onResume();
 
-        trackScreenView(TrackingConstants.ScreenNames.ReportProductPeriods);
+        //trackScreenView(TrackingConstants.ScreenNames.ReportProductPeriods);
     }
 
     @Override

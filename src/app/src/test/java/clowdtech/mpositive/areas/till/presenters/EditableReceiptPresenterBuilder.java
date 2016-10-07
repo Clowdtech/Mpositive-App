@@ -11,7 +11,6 @@ import org.mockito.MockitoAnnotations;
 import java.util.ArrayList;
 
 import clowdtech.mpositive.ISharedPreferences;
-import clowdtech.mpositive.ITracker;
 import clowdtech.mpositive.R;
 import clowdtech.mpositive.areas.till.views.EditableReceiptView;
 import clowdtech.mpositive.areas.till.views.IReceiptLineView;
@@ -21,7 +20,6 @@ import clowdtech.mpositive.queue.events.OrderClearEvent;
 import clowdtech.mpositive.queue.events.OrderSaveEvent;
 import clowdtech.mpositive.receipt.IOrderExporter;
 
-import static junit.framework.Assert.assertEquals;
 import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.anyListOf;
 import static org.mockito.Mockito.doReturn;
@@ -34,9 +32,6 @@ public class EditableReceiptPresenterBuilder {
 
     @Mock
     IEventBus mockEventBus;
-
-    @Mock
-    ITracker mockTracker;
 
     @Mock
     IOrderExporter mockOrderExporter;
@@ -65,7 +60,7 @@ public class EditableReceiptPresenterBuilder {
     }
 
     public EditableReceiptPresenter build() {
-        return new EditableReceiptPresenter(mockRunningOrder, mockEventBus, mockTracker, mockOrderExporter, mockSharedPreferences);
+        return new EditableReceiptPresenter(mockRunningOrder, mockEventBus, mockOrderExporter, mockSharedPreferences);
     }
 
     public EditableReceiptPresenter buildAndBind() {

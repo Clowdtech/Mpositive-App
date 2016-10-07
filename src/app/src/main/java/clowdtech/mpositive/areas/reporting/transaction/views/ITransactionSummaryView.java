@@ -5,7 +5,6 @@ import android.content.Context;
 import java.util.List;
 
 import clowdtech.mpositive.areas.reporting.transaction.Container;
-import clowdtech.mpositive.areas.reporting.transaction.presenters.ITransactionSummaryPresenter;
 import clowdtech.mpositive.areas.reporting.transaction.viewModels.TransactionListItemViewModel;
 
 public interface ITransactionSummaryView {

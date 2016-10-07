@@ -23,9 +23,7 @@ import org.robolectric.annotation.Config;
 import java.util.ArrayList;
 import java.util.List;
 
-import clowdtech.mpositive.R;
 import clowdtech.mpositive.areas.reporting.transaction.builder.TransactionBuilder;
-import clowdtech.mpositive.areas.reporting.transaction.captions.CaptionsTransactionSummary;
 import clowdtech.mpositive.areas.reporting.transaction.viewModels.TransactionListItemViewModel;
 import clowdtech.printer.TransactionsReportFormatInfo;
 

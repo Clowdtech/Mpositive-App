@@ -3,19 +3,16 @@ package clowdtech.mpositive.areas.till;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.view.MenuItem;
 
 import com.squareup.otto.Subscribe;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
-import butterknife.ButterKnife;
 import clowdtech.mpositive.data.RunningOrder;
 import clowdtech.mpositive.queue.IEventBus;
 import clowdtech.mpositive.queue.events.MenuItemVisibilityEvent;
 import clowdtech.mpositive.queue.events.MenuSelectedEvent;
-import clowdtech.mpositive.queue.events.OrderLoadEvent;
 import clowdtech.mpositive.queue.events.OrderLoadedEvent;
 import clowdtech.mpositive.ui.BasePresenter;
 

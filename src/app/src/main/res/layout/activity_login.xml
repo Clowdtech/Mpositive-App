@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@drawable/button_cta_positive">
+
+        <LinearLayout
+            android:id="@+id/view_menu_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnActionBarLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="LOGIN"
+                style="@style/button_cta_actionbar"/>
+
+            <Button
+                android:id="@+id/btnActionCreateAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="CREATE ACCOUNT"
+                style="@style/button_cta_actionbar"/>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/btn_nav_drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name_short"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/background_white"
+                android:layout_centerVertical="true"
+                style="@style/text_base"/>
+
+            <TextView
+                android:id="@+id/screen_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textColor="@color/background_white"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/app_name"
+                android:layout_centerVertical="true"
+                style="@style/text_base"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/brand_primary"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:text="ACCESS CREDENTIALS"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_primary"
+                    android:textSize="20sp"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:text="KEY"/>
+
+                <EditText
+                    android:id="@+id/edtKey"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_bordered_normal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_primary"
+                    android:textSize="20sp"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:text="SECRET"/>
+
+                <EditText
+                    android:id="@+id/edtSecret"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textPassword"
+                    android:background="@drawable/edittext_bordered_normal"/>
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Login"
+                    style="@style/button_cta_actionbar"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_helpicon"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_primary"
+                android:textSize="15sp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/login_bottom_info"/>
+
+            <TextView
+                android:id="@+id/login_sitelink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle=""
+                android:textSize="15sp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="@string/login_bottom_site_link"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

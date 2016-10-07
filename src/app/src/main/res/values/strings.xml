@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
 
+    <string name="site_url">http://46.101.26.68/api/</string>
+
     <string name="app_name">MPOSitive</string>
     <string name="app_name_short">MPOSitive</string>
     <string name="receipt_clear"><u>Clear</u></string>
     <string name="receipt_print"><u>Print</u></string>
     <string name="receipt_save"><u>Save</u></string>
+
+    <string name="login_bottom_info">Access credentials are located in the "Manager Stores" area of your account.
+        \nIn the event that you could not locate these credentials, contact your Account Administrator.</string>
+    <string name="login_bottom_site_link"><a href="http://www.mpositive.co.uk"><u>Visit MPOSitive Website</u></a></string>
 
     <string name="captions_name">Name</string>
     <string name="captions_tile">Tile</string>
@@ -143,33 +149,33 @@
     <string name="content_description_product_add">add product</string>
 
     <string-array name="command_types" translatable="false">
-        <item >Line</item>
-        <item >Raster</item>
+        <item>Line</item>
+        <item>Raster</item>
     </string-array>
 
     <string-array name="command_types_values" translatable="false">
-        <item >Line</item>
-        <item >Raster</item>
+        <item>Line</item>
+        <item>Raster</item>
     </string-array>
 
     <string-array name="security_settings" translatable="false">
-        <item >SSP</item>
-        <item >PIN Code</item>
+        <item>SSP</item>
+        <item>PIN Code</item>
     </string-array>
 
     <string-array name="security_settings_values" translatable="false">
-        <item >0</item>
-        <item >1</item>
+        <item>0</item>
+        <item>1</item>
     </string-array>
 
     <string-array name="retry_type" translatable="false">
-        <item >OFF</item>
-        <item >ON</item>
+        <item>OFF</item>
+        <item>ON</item>
     </string-array>
 
     <string-array name="retry_type_values" translatable="false">
-        <item >0</item>
-        <item >1</item>
+        <item>0</item>
+        <item>1</item>
     </string-array>
 
     <string name="entry_propertyType">Property Type</string>
@@ -198,13 +204,30 @@
     <string name="color_picker_foreground_title">Select a Text Color</string>
     <string name="color_picker_background_title">Select a Background Color</string>
     <!-- Content description for a color square. -->
-    <string name="color_swatch_description">Color <xliff:g id="color_index" example="14">%1$d</xliff:g></string>
+    <string name="color_swatch_description">Color <xliff:g example="14" id="color_index">%1$d</xliff:g></string>
     <!-- Content description for a selected color square. -->
-    <string name="color_swatch_description_selected">Color <xliff:g id="color_index" example="14">%1$d</xliff:g> selected</string>
+    <string name="color_swatch_description_selected">Color <xliff:g example="14" id="color_index">%1$d</xliff:g> selected</string>
 
     <!--feature toggle-->
     <string name="FeatureToggle_ProductSync">false</string>
 
     <string name="loading_products">Loading Products</string>
     <string name="loading_categories">Loading Categories</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+
+    <string name="free_benefit_1">1 site - 1 tablet configuration</string>
+    <string name="free_benefit_2">In app daily transaction and product reporting</string>
+    <string name="free_benefit_3">Off-line mode</string>
+    <string name="free_benefit_4">Online summary reporting</string>
+    <string name="free_benefit_5">All transactions backed and available anywhere in the world</string>
+    <string name="free_benefit_6">Add products via your application</string>
+
+    <string name="pro_benefit_1">Add as many tablets and sites as you wish</string>
+    <string name="pro_benefit_2">In app daily transaction and product reporting</string>
+    <string name="pro_benefit_3">Online, in-depth product and transaction reporting definable by timescale, site, tablet and type</string>
+    <string name="pro_benefit_4">Manage all sites online</string>
+    <string name="pro_benefit_5">Manage all products online</string>
 </resources>
